@@ -7,8 +7,13 @@ form.addEventListener("submit", (e)=>{
   console.log("o",inputs)
   
   inputs.map((inp)=>{
-    console.log("o",inp)
+    
+    let inputs=Array.from(inp)
+    console.log("o",Array.from(inp))
+              localStorage.setItem("step-1", inputs) 
   }) 
   
 })
+
+
 
