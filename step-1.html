@@ -9,56 +9,33 @@
    
 </head>
   <body>
-    <header class="primary">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <div class="d-flex">
-                <a class="nav-link active" aria-current="page" href="#">Cadastre-se</a>
-              </div>
-            </div>
-          </nav>
-        
-    </header>
+    
     <main>
-        <div class="container my-5">
-            <div class="p-5 text-center bg-body-tertiary rounded-3">
-              <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
-              <h1 class="text-body-emphasis">Cadastro do usuário</h1>
-              <p class="col-lg-8 mx-auto fs-5 text-muted">
-                    Preencha os campos do formulário
-               </p>
-              
-              <form>
-
-                <div class="col-12">
-                    <label for="exampleFormControlInput1" class="form-label">Nome completo:</label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome completo">
-                
-               
-                    <label for="exampleFormControlInput1" class="form-label mt-4">Email:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
-               
-               
-                    <label for="exampleFormControlInput1" class="form-label mt-4">Telefone/Celular:</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu numero">
-                </div>
-
-
-                <div class="col-12">
-                    <button class="btn btn-primary btn-lg px-4 rounded-pill mt-5 mb-5" type="submit">Enviar</button>
-
-                    <div class="d-inline-flex gap-2 mb-5">
-                        <button class="d-inline-flex align-items-center btn btn-outline-secondary px-4 rounded-pill" type="button">
-                          Voltar
-                        </button>
-                        <button class="btn btn-outline-secondary px-4 rounded-pill" type="button">
-                          Proximo
-                        </button>
-                    </div>
-                </div>
-              </form>
+      
+        <div class="container py-5">
+          <h1 class="h2">Cadastro de Usuários </h1>
+          <p>Preencha os campos com seus dados.</p>
+          <p>
+            <div class="card" >
+          <div class="card-body">
+          
+          <form id="dataSubmit">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nome completo</label>
+              <input type="nunber" class="form-control" id="formGroupExampleInput" placeholder="Seu nome completo " required>
             </div>
-          </div>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="email" class="form-control" id=""  placeholder="Endereço de e-mail">
+            
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Enviar cadastro</button
+          </form>
+       
+         </div>
+       </div>
+      </div>
+
     </main>
     <footer>
         <p class="text-center">Copyright Prianti © 2023 Todos Os Direitos Reservados</p>
