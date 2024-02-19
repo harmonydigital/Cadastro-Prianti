@@ -1,17 +1,16 @@
 const form = document.getElementById ("dataSubmit")
 
 let inputs=document.querySelectorAll("input")
+let msg=document.getElementById ("msg")
 
-form.addEventListener("submit", (e)=>{
- e.preventdefault()
-  console.log("o",inputs)
+
+document.querySelector('.submit').addEventListener("click", (e)=>{
+ e.preventDefault()
+ 
+ 
+   alert('teste')
   
-  inputs.map((inp)=>{
-    
-    let inputs=Array.from(inp)
-    console.log("o",Array.from(inp))
-              localStorage.setItem("step-1", inputs) 
-  }) 
+  
   
 })
 
