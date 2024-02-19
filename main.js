@@ -16,11 +16,12 @@ document.querySelector('form').addEventListener('submit', (e)=>{
     }); 
   }) 
   
+  localStorage.setItem(step, Array.from(jsonArr)); 
   
  if(step=="step-1"){  
-   localStorage.setItem(step, Array.from(jsonArr)); 
    setTimeout(()=>{
-    window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-2.html" 
+    // window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-2.html" 
+     console.log(localStorage.getItem(step))
    },1000);
  }
  if(step=="step-2"){  
@@ -38,5 +39,7 @@ document.querySelector('form').addEventListener('submit', (e)=>{
       window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/sucess.html" 
    },1000);
  }
+  
+  console.log(Array.from(jsonArr))
    
 })
