@@ -4,7 +4,7 @@ let inputs=document.querySelectorAll("input")
 let msg=document.getElementById ("msg")
 let arrInputs=Array.from(inputs)
 let jsonArr=[]
-
+let step=document.querySelector('form').getAttribute('step')
 
 document.querySelector('form').addEventListener('submit', (e)=>{
  e.preventDefault()
@@ -18,5 +18,12 @@ document.querySelector('form').addEventListener('submit', (e)=>{
   
  console.log(jsonArr)
   alert('data')
+  
+  localStorage.setItem(step, jsonArr);
+  console.log( localStorage.getItem(step)) 
+  
 })
 
+// arrInputs.map((mapInp)=>{
+//   console.log(mapInp.getAttribute('name'))
+// })
