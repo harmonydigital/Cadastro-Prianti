@@ -1,3 +1,8 @@
-form {
-    text-align: start;
+body{
+  background-color:#eeeeee;
+}
+
+input.form-control {
+    height: 50px;
+    margin: 0px auto 10px;
 }
