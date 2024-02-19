@@ -40,6 +40,8 @@ document.querySelector('form').addEventListener('submit', (e)=>{
    },1000);
  }
   
-  console.log(Array.from(jsonArr))
-   
+  // console.log("this",Array.from(jsonArr))
+   Array.from(jsonArr).map((data)=>{
+     console.log(data)
+   })
 })
