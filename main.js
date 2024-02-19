@@ -35,7 +35,7 @@ document.querySelector('form').addEventListener('submit', (e)=>{
  }
  if(step=="step-4"){  
    setTimeout(()=>{
-    // window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/step-4.html" 
+      window.location.href="https://harmonydigital.github.io/Cadastro-Prianti/sucess.html" 
    },2000);
  }
    
